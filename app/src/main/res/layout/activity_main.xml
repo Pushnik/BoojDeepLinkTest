@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.activewebsite.booj.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Hello World!"
+            />
+
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Launch"
+            android:onClick="onClick"
+            />
+
+        <EditText
+            android:id="@+id/query_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/button_boojtest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_boojtest"
+            android:tag="@string/text_boojtest"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button_np"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_np"
+            android:tag="@string/text_np"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button_wkre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_wkre"
+            android:tag="@string/text_wkre"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button_murney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_murney"
+            android:tag="@string/text_murney"
+            android:onClick="onClick"
+            />
+
+        <EditText
+            android:id="@+id/query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mls"
+            />
+
+        <Button
+            android:id="@+id/button_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_share"
+            android:tag="@string/text_share"
+            android:onClick="onClick"
+            />
+
+        <Button
+            android:id="@+id/button_w_prop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_w_prop1"
+            android:tag="@string/text_w_prop1"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_w_prop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_w_prop2"
+            android:tag="@string/text_w_prop2"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_np_prop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_np_prop1"
+            android:tag="@string/text_np_prop1"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_np_prop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_np_prop2"
+            android:tag="@string/text_np_prop2"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_mur_prop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_mur_prop1"
+            android:tag="@string/text_mur_prop1"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_mur_prop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_mur_prop2"
+            android:tag="@string/text_mur_prop2"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <EditText
+            android:id="@+id/query_referrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="referrer"
+            />
+
+        <Button
+            android:id="@+id/button_rachel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_rachel"
+            android:tag="@string/text_rachel"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_chuck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_chuck"
+            android:tag="@string/text_chuck"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_benjy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_benjy"
+            android:tag="@string/text_benjy"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_richard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_richard"
+            android:tag="@string/text_richard"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_stephenbeach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_stephenbeach"
+            android:tag="@string/text_stephenbeach"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_zach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_zach"
+            android:tag="@string/text_zach"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
