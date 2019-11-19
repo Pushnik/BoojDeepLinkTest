@@ -41,23 +41,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideButtonsByClient(String client){
-        findViewById(R.id.button_cindy).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_sunny).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+        findViewById(R.id.layout_clark).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_cindy).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_sunny).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_veronica).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_w_prop1).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_w_prop2).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
 
-        findViewById(R.id.button_rachel).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_chuck).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
+        findViewById(R.id.layout_wkre).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_rachel).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_chuck).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_np_prop1).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_np_prop2).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
-        findViewById(R.id.button_benjy).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_richard).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_mike).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_stephenbeach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_zach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+        findViewById(R.id.layout_npdodge).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_benjy).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_richard).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_mike).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_stephenbeach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+//        findViewById(R.id.button_zach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_mur_prop1).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_mur_prop2).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
@@ -70,12 +74,18 @@ public class MainActivity extends AppCompatActivity {
                 || view.getId() == R.id.button_murney
                 || view.getId() == R.id.button_np
                 || view.getId() == R.id.button_wkre
+                || view.getId() == R.id.button_ebby
                 ) {
 //            if (name.contentEquals("lyon")) {
 //                link = "www.golyon.com";
 //            }
-            etQueryPackage.setText((String)view.getTag());
-            hideButtonsByClient(view.getTag().toString());
+            String tag = (String)view.getTag();
+            if (etQueryPackage.getText().toString().equals(tag)) {
+                tag = "";
+            }
+            etQueryPackage.setText(tag);
+            hideButtonsByClient(tag);
+
         } else if (view.getId() == R.id.button_go) {
             String name = etQueryPackage.getText().toString();
             String brand = etQueryReferrer.getText().toString();
