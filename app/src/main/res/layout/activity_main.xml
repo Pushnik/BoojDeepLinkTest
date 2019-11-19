@@ -34,12 +34,29 @@
             android:layout_height="wrap_content"
             />
 
+        <EditText
+            android:id="@+id/query_referrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="referrer"
+            />
+
         <Button
             android:id="@+id/button_boojtest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_boojtest"
             android:tag="@string/text_boojtest"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_clark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_clark"
+            android:tag="@string/text_clark"
             android:onClick="onClick"
             />
 
@@ -59,6 +76,7 @@
             android:text="@string/button_wkre"
             android:tag="@string/text_wkre"
             android:onClick="onClick"
+            android:visibility="gone"
             />
 
         <Button
@@ -68,13 +86,186 @@
             android:text="@string/button_murney"
             android:tag="@string/text_murney"
             android:onClick="onClick"
+            android:visibility="gone"
             />
+
+        <Button
+            android:id="@+id/button_ebby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ebby"
+            android:tag="@string/text_ebby"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/button_notset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_notset"
+            android:tag="@string/text_notset"
+            android:onClick="onClick"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_clark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/button_cindy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_cindy"
+                android:tag="@string/text_cindy"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_sunny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sunny"
+                android:tag="@string/text_sunny"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_veronica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_veronica"
+                android:tag="@string/text_veronica"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_npdodge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/button_benjy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_benjy"
+                android:tag="@string/text_benjy"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_richard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_richard"
+                android:tag="@string/text_richard"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_mike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_mike"
+                android:tag="@string/text_mike"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_stephenbeach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_stephenbeach"
+                android:tag="@string/text_stephenbeach"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_zach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_zach"
+                android:tag="@string/text_zach"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_wkre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/button_rachel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_rachel"
+                android:tag="@string/text_rachel"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_chuck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_chuck"
+                android:tag="@string/text_chuck"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_murney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_ebby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+
+        </LinearLayout>
 
         <EditText
             android:id="@+id/query_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="mls"
+            android:visibility="gone"
             />
 
         <Button
@@ -84,7 +275,38 @@
             android:text="@string/button_share"
             android:tag="@string/text_share"
             android:onClick="onClick"
+            android:visibility="gone"
             />
+
+        <Button
+            android:id="@+id/button_share_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_share_brand"
+            android:tag="@string/text_share_brand"
+            android:onClick="onClick"
+            android:visibility="gone"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/button_c_prop1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/button_c_prop1"-->
+<!--            android:tag="@string/text_c_prop1"-->
+<!--            android:onClick="onClick"-->
+<!--            android:visibility="gone"-->
+<!--            />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_c_prop2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/button_c_prop2"-->
+<!--            android:tag="@string/text_c_prop2"-->
+<!--            android:onClick="onClick"-->
+<!--            android:visibility="gone"-->
+<!--            />-->
 
         <Button
             android:id="@+id/button_w_prop1"
@@ -142,73 +364,6 @@
             android:layout_height="wrap_content"
             android:text="@string/button_mur_prop2"
             android:tag="@string/text_mur_prop2"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <EditText
-            android:id="@+id/query_referrer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="referrer"
-            />
-
-        <Button
-            android:id="@+id/button_rachel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_rachel"
-            android:tag="@string/text_rachel"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_chuck"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_chuck"
-            android:tag="@string/text_chuck"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_benjy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_benjy"
-            android:tag="@string/text_benjy"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_richard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_richard"
-            android:tag="@string/text_richard"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_stephenbeach"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_stephenbeach"
-            android:tag="@string/text_stephenbeach"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_zach"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_zach"
-            android:tag="@string/text_zach"
             android:onClick="onClick"
             android:visibility="gone"
             />

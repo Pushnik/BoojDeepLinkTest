@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideButtonsByClient(String client){
+        findViewById(R.id.button_cindy).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+        findViewById(R.id.button_sunny).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
+
         findViewById(R.id.button_w_prop1).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_w_prop2).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
 
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.button_benjy).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_richard).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
+        findViewById(R.id.button_mike).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_stephenbeach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_zach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
@@ -62,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         if (view.getId() == R.id.button_boojtest
+                || view.getId() == R.id.button_clark
                 || view.getId() == R.id.button_murney
                 || view.getId() == R.id.button_np
                 || view.getId() == R.id.button_wkre
@@ -73,11 +78,13 @@ public class MainActivity extends AppCompatActivity {
             hideButtonsByClient(view.getTag().toString());
         } else if (view.getId() == R.id.button_go) {
             String name = etQueryPackage.getText().toString();
-            mIntents.startNewActivity(this, PACKAGE + name, WWW + name + COM, etQueryReferrer.getText().toString());
-        } else if (view.getId() == R.id.button_share) {
+            String brand = etQueryReferrer.getText().toString();
+            mIntents.startNewActivity(this, PACKAGE + name, WWW + name + COM, brand);
+        } else if (view.getId() == R.id.button_share || view.getId() == R.id.button_share_brand) {
             String name = etQueryPackage.getText().toString();
             String id = etQueryId.getText().toString();
-            mIntents.launchProperty(this, PACKAGE + name, HTTPS + WWW + name + COM + PROPERTY + id, id);
+            String brand = etQueryReferrer.getText().toString() + ".";
+            mIntents.launchProperty(this, PACKAGE + name, HTTPS + (view.getId() == R.id.button_share ? WWW : brand) + name + COM + PROPERTY + id, id);
         } else if (view.getId() == R.id.button_w_prop1
                 || view.getId() == R.id.button_w_prop2
                 || view.getId() == R.id.button_np_prop1

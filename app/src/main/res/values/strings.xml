@@ -4,17 +4,31 @@
 
     <string name="button_boojtest">Booj Test</string>
     <string name="text_boojtest">boojdeeplinktest</string>
-    <string name="button_np">NP Dodge</string>
-    <string name="text_np">npdodge</string>
-    <string name="button_wkre">WKRE</string>
-    <string name="text_wkre">wkre</string>
-    <string name="button_murney">Murney</string>
-    <string name="text_murney">murney</string>
 
     <string name="button_share">SHARE</string>
     <string name="text_share">Share</string>
+    <string name="button_share_brand">SHARE BRAND</string>
+    <string name="text_share_brand">Share brand</string>
+
+    <string name="button_notset">Not set</string>
+    <string name="text_notset">(not set)</string>
+
+    <!--Clark-->
+    <string name="button_clark">Clark</string>
+    <string name="text_clark">clark</string>
+<!--    <string name="text_clark">clarkhawaii</string>-->
+
+    <string name="button_cindy">Cindy Kim Afan</string>
+    <string name="text_cindy">cindy-kim-afan</string>
+    <string name="button_sunny">Sunny Fitzgerald</string>
+    <string name="text_sunny">sunny-fitz-gerald</string>
+    <string name="button_veronica">Veronica Aubrey</string>
+    <string name="text_veronica">veronica-aubrey</string>
 
     <!--WKRE-->
+    <string name="button_wkre">WKRE</string>
+    <string name="text_wkre">wkre</string>
+
     <string name="button_w_prop1">PROP 1</string>
     <string name="text_w_prop1">234060243</string>
     <string name="button_w_prop2">PROP 2</string>
@@ -26,6 +40,9 @@
     <string name="text_chuck">chuckoppermann</string>
 
     <!--NPDodge-->
+    <string name="button_np">NP Dodge</string>
+    <string name="text_np">npdodge</string>
+
     <string name="button_np_prop1">PROP 1</string>
     <string name="text_np_prop1">268051493</string>
     <string name="button_np_prop2">PROP 2</string>
@@ -35,6 +52,8 @@
     <string name="text_benjy">benjygaudreau</string>
     <string name="button_elizabeth">Elizabeth Weintraub</string>
     <string name="text_elizabeth">elizabeth_weintraub</string>
+    <string name="button_mike">Mike Allmon</string>
+    <string name="text_mike">mikeallmon</string>
     <string name="button_richard">Richard Bilek</string>
     <string name="text_richard">richardbilek</string>
     <string name="button_stephenbeach">Stephen Beach</string>
@@ -43,9 +62,21 @@
     <string name="text_zach">zacharyzach</string>
 
     <!--Murney-->
+    <string name="button_murney">Murney</string>
+    <string name="text_murney">murney</string>
+
     <string name="button_mur_prop1">PROP 1</string>
     <string name="text_mur_prop1">268051493</string>
     <string name="button_mur_prop2">PROP 2</string>
     <string name="text_mur_prop2">322965163</string>
+
+    <!--Ebby-->
+    <string name="button_ebby">Ebby</string>
+    <string name="text_ebby">ebby</string>
+
+    <string name="button_ebb_prop1">PROP 1</string>
+    <string name="text_ebb_prop1">322965163</string>
+    <string name="button_ebb_prop2">PROP 2</string>
+    <string name="text_ebb_prop2">322965163</string>
 
 </resources>
