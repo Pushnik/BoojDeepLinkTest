@@ -12,7 +12,8 @@ import static com.activewebsite.booj.BrandingReceiver.PREFS;
 import static com.activewebsite.booj.BrandingReceiver.REFERRER;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String PACKAGE = "com.activewebsite.";
+//    public static final String PACKAGE = "com.activewebsite.";
+    public static final String PACKAGE = "com.remax.remaxmobile";
     public static final String HTTPS = "https://";
     public static final String WWW = "www.";
     public static final String COM = ".com";
@@ -41,27 +42,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hideButtonsByClient(String client){
+        findViewById(R.id.layout_remax).setVisibility(client.equals(getString(R.string.text_remax))?View.VISIBLE : View.GONE);
+
         findViewById(R.id.layout_clark).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_cindy).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_sunny).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_veronica).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_w_prop1).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_w_prop2).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.layout_wkre).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_rachel).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_chuck).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_np_prop1).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_np_prop2).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.layout_npdodge).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_benjy).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_richard).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_mike).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_stephenbeach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-//        findViewById(R.id.button_zach).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.button_mur_prop1).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
         findViewById(R.id.button_mur_prop2).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
@@ -70,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         if (view.getId() == R.id.button_boojtest
+                || view.getId() == R.id.button_remax
                 || view.getId() == R.id.button_clark
                 || view.getId() == R.id.button_murney
                 || view.getId() == R.id.button_np

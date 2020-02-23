@@ -52,6 +52,15 @@
             />
 
         <Button
+            android:id="@+id/button_remax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_remax"
+            android:tag="@string/text_remax"
+            android:onClick="onClick"
+            />
+
+        <Button
             android:id="@+id/button_clark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,6 +116,44 @@
             android:tag="@string/text_notset"
             android:onClick="onClick"
             />
+
+        <LinearLayout
+            android:id="@+id/layout_remax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/button_alex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_alex"
+                android:tag="@string/text_alex"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_mor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_mor"
+                android:tag="@string/text_mor"
+                android:onClick="onClick"
+                />
+
+<!--            <Button-->
+<!--                android:id="@+id/button_gary"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/button_gary"-->
+<!--                android:tag="@string/text_gary"-->
+<!--                android:onClick="onClick"-->
+<!--                />-->
+
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/layout_clark"

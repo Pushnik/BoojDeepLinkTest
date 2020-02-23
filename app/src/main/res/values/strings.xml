@@ -13,10 +13,18 @@
     <string name="button_notset">Not set</string>
     <string name="text_notset">(not set)</string>
 
+    <!--Remax-->
+    <string name="button_remax">Remax</string>
+    <string name="text_remax">remax</string>
+
+    <string name="button_alex">Alex Brachfeld</string>
+    <string name="text_alex">100698525</string>
+    <string name="button_mor">Mor Zucker</string>
+    <string name="text_mor">102062350</string>
+
     <!--Clark-->
     <string name="button_clark">Clark</string>
     <string name="text_clark">clark</string>
-<!--    <string name="text_clark">clarkhawaii</string>-->
 
     <string name="button_cindy">Cindy Kim Afan</string>
     <string name="text_cindy">cindy-kim-afan</string>
