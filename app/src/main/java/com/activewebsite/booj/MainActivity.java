@@ -83,12 +83,14 @@ public class MainActivity extends AppCompatActivity {
         } else if (view.getId() == R.id.button_go) {
             String name = etQueryPackage.getText().toString();
             String brand = etQueryReferrer.getText().toString();
-            mIntents.startNewActivity(this, PACKAGE + name, WWW + name + COM, brand);
+//            mIntents.startNewActivity(this, PACKAGE + name, WWW + name + COM, brand);
+            mIntents.startNewActivity(this, PACKAGE, WWW + name + COM, brand);
         } else if (view.getId() == R.id.button_share || view.getId() == R.id.button_share_brand) {
             String name = etQueryPackage.getText().toString();
             String id = etQueryId.getText().toString();
             String brand = etQueryReferrer.getText().toString() + ".";
-            mIntents.launchProperty(this, PACKAGE + name, HTTPS + (view.getId() == R.id.button_share ? WWW : brand) + name + COM + PROPERTY + id, id);
+//            mIntents.launchProperty(this, PACKAGE + name, HTTPS + (view.getId() == R.id.button_share ? WWW : brand) + name + COM + PROPERTY + id, id);
+            mIntents.launchProperty(this, PACKAGE, HTTPS + (view.getId() == R.id.button_share ? WWW : brand) + name + COM + PROPERTY + id, id);
         } else if (view.getId() == R.id.button_w_prop1
                 || view.getId() == R.id.button_w_prop2
                 || view.getId() == R.id.button_np_prop1

@@ -67,6 +67,7 @@
             android:text="@string/button_clark"
             android:tag="@string/text_clark"
             android:onClick="onClick"
+            android:visibility="gone"
             />
 
         <Button
@@ -76,6 +77,7 @@
             android:text="@string/button_np"
             android:tag="@string/text_np"
             android:onClick="onClick"
+            android:visibility="gone"
             />
 
         <Button
@@ -249,6 +251,24 @@
                 android:onClick="onClick"
                 />
 
+            <Button
+                android:id="@+id/button_np_prop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_np_prop1"
+                android:tag="@string/text_np_prop1"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_np_prop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_np_prop2"
+                android:tag="@string/text_np_prop2"
+                android:onClick="onClick"
+                />
+
         </LinearLayout>
 
         <LinearLayout
@@ -279,6 +299,24 @@
                 android:onClick="onClick"
                 />
 
+            <Button
+                android:id="@+id/button_w_prop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_w_prop1"
+                android:tag="@string/text_w_prop1"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_w_prop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_w_prop2"
+                android:tag="@string/text_w_prop2"
+                android:onClick="onClick"
+                />
+
         </LinearLayout>
 
         <LinearLayout
@@ -291,6 +329,23 @@
             android:visibility="gone"
             >
 
+            <Button
+                android:id="@+id/button_mur_prop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_mur_prop1"
+                android:tag="@string/text_mur_prop1"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_mur_prop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_mur_prop2"
+                android:tag="@string/text_mur_prop2"
+                android:onClick="onClick"
+                />
 
         </LinearLayout>
 
@@ -354,66 +409,6 @@
 <!--            android:onClick="onClick"-->
 <!--            android:visibility="gone"-->
 <!--            />-->
-
-        <Button
-            android:id="@+id/button_w_prop1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_w_prop1"
-            android:tag="@string/text_w_prop1"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_w_prop2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_w_prop2"
-            android:tag="@string/text_w_prop2"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_np_prop1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_np_prop1"
-            android:tag="@string/text_np_prop1"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_np_prop2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_np_prop2"
-            android:tag="@string/text_np_prop2"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_mur_prop1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_mur_prop1"
-            android:tag="@string/text_mur_prop1"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
-
-        <Button
-            android:id="@+id/button_mur_prop2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_mur_prop2"
-            android:tag="@string/text_mur_prop2"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
 
     </LinearLayout>
 
