@@ -53,7 +53,8 @@ public class IntentHelper {
         Log.e(TAG, "packageName = " + packageName + ", data = " + link);
         intent.setData(Uri.parse(link));
         if (packageName.contains("remax")) {
-            intent.putExtra("company_property_id", id);
+            intent.putExtra("type", "property_detail");
+            intent.putExtra("values", id);
         } else {
             intent.putExtra("company_property_id", Integer.parseInt(id));
         }

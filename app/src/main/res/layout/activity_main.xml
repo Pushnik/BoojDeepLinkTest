@@ -75,6 +75,16 @@
             android:onClick="onClick"
             />
 
+<!--        <Button-->
+<!--            android:id="@+id/button_remax_mobile"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/button_remax_mobile"-->
+<!--            android:tag="@string/text_remax_mobile"-->
+<!--            android:onClick="onClick"-->
+<!--            android:visibility="gone"-->
+<!--            />-->
+
         <Button
             android:id="@+id/button_clark"
             android:layout_width="match_parent"

@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showButtonsByClient(String client){
-        boolean isRemax = client.equals(getString(R.string.text_remax)) || client.equals(getString(R.string.text_remax_mobile));
-        findViewById(R.id.layout_remax).setVisibility(isRemax ? View.VISIBLE : View.GONE);
-//        findViewById(R.id.layout_remax).setVisibility(client.equals(getString(R.string.text_remax))?View.VISIBLE : View.GONE);
+//        boolean isRemax = client.equals(getString(R.string.text_remax)) || client.equals(getString(R.string.text_remax_mobile));
+//        findViewById(R.id.layout_remax).setVisibility(isRemax ? View.VISIBLE : View.GONE);
+        findViewById(R.id.layout_remax).setVisibility(client.equals(getString(R.string.text_remax))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.layout_clark).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         if (view.getId() == R.id.button_boojtest
                 || view.getId() == R.id.button_remax
-                || view.getId() == R.id.button_remax_mobile
+//                || view.getId() == R.id.button_remax_mobile
                 || view.getId() == R.id.button_clark
                 || view.getId() == R.id.button_murney
                 || view.getId() == R.id.button_np
