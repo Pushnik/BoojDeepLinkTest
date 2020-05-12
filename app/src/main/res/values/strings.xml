@@ -22,6 +22,11 @@
     <string name="button_mor">Mor Zucker</string>
     <string name="text_mor">102062350</string>
 
+    <string name="button_r_prop1">8 CHERRY HILLS PARK DR</string>
+    <string name="text_r_prop1">1929974704050384079</string>
+    <string name="button_r_prop2">2420 SUMMERLIN CT</string>
+    <string name="text_r_prop2">2916717120707847616</string>
+
     <!--Clark-->
     <string name="button_clark">Clark</string>
     <string name="text_clark">clark</string>

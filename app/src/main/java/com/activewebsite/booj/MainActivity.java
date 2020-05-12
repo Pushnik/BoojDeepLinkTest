@@ -41,29 +41,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void hideButtonsByClient(String client){
-        findViewById(R.id.layout_remax).setVisibility(client.equals(getString(R.string.text_remax))?View.VISIBLE : View.GONE);
+    public void showButtonsByClient(String client){
+        boolean isRemax = client.equals(getString(R.string.text_remax)) || client.equals(getString(R.string.text_remax_mobile));
+        findViewById(R.id.layout_remax).setVisibility(isRemax ? View.VISIBLE : View.GONE);
+//        findViewById(R.id.layout_remax).setVisibility(client.equals(getString(R.string.text_remax))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.layout_clark).setVisibility(client.equals(getString(R.string.text_clark))?View.VISIBLE : View.GONE);
 
-        findViewById(R.id.button_w_prop1).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_w_prop2).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-
         findViewById(R.id.layout_wkre).setVisibility(client.equals(getString(R.string.text_wkre))?View.VISIBLE : View.GONE);
-
-        findViewById(R.id.button_np_prop1).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_np_prop2).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
         findViewById(R.id.layout_npdodge).setVisibility(client.equals(getString(R.string.text_np))?View.VISIBLE : View.GONE);
 
-        findViewById(R.id.button_mur_prop1).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
-        findViewById(R.id.button_mur_prop2).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
+        findViewById(R.id.layout_murney).setVisibility(client.equals(getString(R.string.text_murney))?View.VISIBLE : View.GONE);
 
     }
 
     public void onClick(View view) {
         if (view.getId() == R.id.button_boojtest
                 || view.getId() == R.id.button_remax
+                || view.getId() == R.id.button_remax_mobile
                 || view.getId() == R.id.button_clark
                 || view.getId() == R.id.button_murney
                 || view.getId() == R.id.button_np
@@ -78,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 tag = "";
             }
             etQueryPackage.setText(tag);
-            hideButtonsByClient(tag);
+            showButtonsByClient(tag);
 
         } else if (view.getId() == R.id.button_go) {
             String name = etQueryPackage.getText().toString();
@@ -97,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
                 || view.getId() == R.id.button_np_prop2
                 || view.getId() == R.id.button_mur_prop1
                 || view.getId() == R.id.button_mur_prop2
+                || view.getId() == R.id.button_r_prop1
+                || view.getId() == R.id.button_r_prop2
                 ) {
             etQueryId.setText((String)view.getTag());
         } else {

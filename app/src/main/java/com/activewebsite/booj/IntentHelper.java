@@ -19,6 +19,7 @@ public class IntentHelper {
     public static final String QUERY_MEDIUM = "&utm_medium=mobile";
     public static final String QUERY_CAMPAIGN = "&utm_campaign=mobile_download";
     public static final String QUERY_MEDIUM_CAMPAIGN = QUERY_MEDIUM + QUERY_CAMPAIGN;
+    public static final String QUERY_AGENT_ID = "agentId=";
 
     public void startNewActivity(Context context, String packageName, String link, String referrer) {
         Intent intent = context.getPackageManager().getLaunchIntentForPackage(packageName);
@@ -51,7 +52,11 @@ public class IntentHelper {
         }
         Log.e(TAG, "packageName = " + packageName + ", data = " + link);
         intent.setData(Uri.parse(link));
-        intent.putExtra("company_property_id", Integer.parseInt(id));
+        if (packageName.contains("remax")) {
+            intent.putExtra("company_property_id", id);
+        } else {
+            intent.putExtra("company_property_id", Integer.parseInt(id));
+        }
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }

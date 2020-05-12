@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Hello World!"
+            android:text="Deeplink testing"
             />
 
         <Button
@@ -39,6 +39,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="referrer"
+            />
+
+        <EditText
+            android:id="@+id/query_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mls number"
+            />
+        <Button
+            android:id="@+id/button_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_share"
+            android:tag="@string/text_share"
+            android:onClick="onClick"
             />
 
         <Button
@@ -117,6 +132,7 @@
             android:text="@string/button_notset"
             android:tag="@string/text_notset"
             android:onClick="onClick"
+            android:visibility="gone"
             />
 
         <LinearLayout
@@ -154,6 +170,24 @@
 <!--                android:tag="@string/text_gary"-->
 <!--                android:onClick="onClick"-->
 <!--                />-->
+
+            <Button
+                android:id="@+id/button_r_prop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_r_prop1"
+                android:tag="@string/text_r_prop1"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/button_r_prop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_r_prop2"
+                android:tag="@string/text_r_prop2"
+                android:onClick="onClick"
+                />
 
         </LinearLayout>
 
@@ -362,23 +396,21 @@
 
         </LinearLayout>
 
-        <EditText
-            android:id="@+id/query_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="mls"
-            android:visibility="gone"
-            />
+<!--        <EditText-->
+<!--            android:id="@+id/query_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="mls"-->
+<!--            />-->
 
-        <Button
-            android:id="@+id/button_share"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_share"
-            android:tag="@string/text_share"
-            android:onClick="onClick"
-            android:visibility="gone"
-            />
+<!--        <Button-->
+<!--            android:id="@+id/button_share"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/button_share"-->
+<!--            android:tag="@string/text_share"-->
+<!--            android:onClick="onClick"-->
+<!--            />-->
 
         <Button
             android:id="@+id/button_share_brand"
@@ -389,26 +421,6 @@
             android:onClick="onClick"
             android:visibility="gone"
             />
-
-<!--        <Button-->
-<!--            android:id="@+id/button_c_prop1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/button_c_prop1"-->
-<!--            android:tag="@string/text_c_prop1"-->
-<!--            android:onClick="onClick"-->
-<!--            android:visibility="gone"-->
-<!--            />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/button_c_prop2"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="@string/button_c_prop2"-->
-<!--            android:tag="@string/text_c_prop2"-->
-<!--            android:onClick="onClick"-->
-<!--            android:visibility="gone"-->
-<!--            />-->
 
     </LinearLayout>
 
